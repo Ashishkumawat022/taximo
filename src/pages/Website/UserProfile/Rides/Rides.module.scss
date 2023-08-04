@@ -1,0 +1,121 @@
+.rideHistory {
+
+    :global(.nav) {
+
+        :global(.nav-item) {
+
+            :global(.nav-link) {
+                background-color:#fff;
+                border: 1px solid #c1c1c1;
+                color: #333;
+                margin-bottom: 10px;
+
+                &:global(.active) {
+                   background-color: var(--Main);
+                   border: 1px solid var(--Main);
+                }
+            }
+        }
+    }
+        
+    .filterMenu {
+
+        :global(.nav) {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #c1c1c1;
+ 
+            :global(.nav-item) {
+
+                :global(.nav-link) {
+                    background-color:#fff;
+                    border: 1px solid #c1c1c1;
+                    color: #333;
+                    margin-bottom: 0px;
+                    margin-right: 15px;
+                    border-bottom: none;
+    
+                    &:global(.active) {
+                    background-color: var(--Main);
+                    border: 1px solid var(--Main);
+                    border-bottom: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+.rideBox {
+    border:1px solid #c1c1c1;
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+
+    .background {
+
+        small {
+            font-size: 12px;
+            color: #443e3e;
+        }
+    }
+
+    .code {
+        background: #fff;
+        text-align: center;
+        display: inline-block;
+        padding: 8px 20px;
+        border-style: dotted;
+        border-color: #3d4755;
+    }
+    .rideBtn {
+        display: inline-block;
+        background: #3d4755;
+        padding: 6px 15px;
+        border: none;
+        margin-top: 10px;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .location {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            font-size: 12px;
+            padding-bottom: 12px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                background: #000;
+                left: 0;
+                top: 10px;
+                transform: translate(-0%, -50%);
+                border-radius: 50px;
+            }
+
+            &:first-child {
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 3px;
+                    height: 100%;
+                    background: #000;
+                    left: 3px;
+                    top: 30px;
+                    transform: translate(50%, -50%);
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}

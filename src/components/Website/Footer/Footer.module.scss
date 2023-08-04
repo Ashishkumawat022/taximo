@@ -1,0 +1,110 @@
+@import "../../../assets/stylesheet/variables.module.scss";
+@import "../../../assets/stylesheet/fonts.module.scss";
+
+
+.mainFooter {
+    background-color: #38424f;
+    color: #b8b8b8;
+    padding-top: 60px;
+
+    .ftMenu {
+
+        &.ftQcLinks {
+            padding-left: 60px;
+        }
+
+        .logo {
+            margin-bottom: 15px;
+            display: inline-block;
+
+            img {
+                height: 30px;
+            }
+        }
+        h5 {
+            color: #eaeaea;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+
+                a {
+                    color: #b8b8b8;
+                    font-weight: 300;
+                    margin: 8px 0px;
+                    display: block;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: var(--Main);
+                    }
+                }
+            }
+
+            &.socialLinks {
+                display: flex;
+
+                li {
+
+                    a {
+                        width: 34px;
+                        height: 34px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #b8b8b8;
+                        margin-right: 10px;
+                        transition: 0.5s;
+
+                        &:hover {
+                            background: var(--Main);
+                            border: 1px solid var(--Main);
+                            color: #fff;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyRight {
+        text-align: center;
+        padding: 20px 15px;
+        border-top: 1px solid #5a5a5a;
+        margin-top: 50px;
+    }
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+
+@media (max-width:991px) {
+
+    .mainFooter {
+        background-color: #38424f;
+        color: #b8b8b8;
+        padding-top: 60px;
+
+        .ftMenu {
+            margin-bottom: 25px;
+
+            &.ftQcLinks {
+                padding-left: 12px;
+            }
+        }
+
+    }
+
+}

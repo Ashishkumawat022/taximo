@@ -1,0 +1,101 @@
+
+
+.profileMenu {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border: 1px solid #eaeaea;
+	// position: sticky;
+    // top: 115px;
+
+	li {
+		display: inline-block;
+		width: 100%;
+		flex: 0 0 auto;
+
+		a {
+			color: #000;
+			padding: 18px 18px;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			line-height: 18px;
+			border-bottom: 1px solid #eaeaea;
+			border-radius: 0px !important;
+
+			&:global(.active) {
+				background-color:var(--Main);
+				color:#222;
+				border-color:var(--Main);
+			}
+		}
+		button {
+			color: #000;
+			padding: 18px 18px;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			line-height: 18px;
+			border: none;
+			border-bottom: 1px solid #eaeaea;
+			border-radius: 0px !important;
+			background: #fff;
+			width: 100%;
+
+			&:global(.active) {
+				background-color:var(--Main);
+				color:#222;
+				border-color:var(--Main);
+			}
+		}
+	}
+}
+
+.logoutPopup{
+	padding: 20px 20px;
+
+	h3{
+		font-size: 16px;
+		font-weight: normal;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	:global(.btn){
+		width: 100%;
+		color: #000;
+		display: block;
+		padding: 8px 8px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+
+	.actionBtn{
+		background-color: var(--Main);
+		border-radius: 6px;
+	}
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:991px) {
+
+
+	.profileMenu {
+		position: relative;
+		top: 0px;
+	}
+
+}

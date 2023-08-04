@@ -1,0 +1,311 @@
+.bookingSection {
+    position: relative;
+
+    .bannersection {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .bannerContent {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: #fff;
+           text-align: center;
+
+           
+           h1 {
+                font-size: 50px;
+                color: var(--Main);
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            h2 {
+                font-size: 40px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            p {
+                color: #b8b8b8;
+                margin-bottom: 40px;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+    .contentBox {
+        position:relative;
+        z-index: 1;
+        margin-top: -140px;
+
+        .bookingForm {
+            width: 650px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 40px;
+            box-shadow: 0px 4px 40px 0px #70707057;
+        }
+
+    }
+}
+
+.stepCard {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    position: relative;
+
+    .stepArrow {
+        position: absolute;
+        filter: invert(27%) sepia(0%) saturate(162%) hue-rotate(189deg) brightness(89%) contrast(70%);
+        top: 20px;
+        width: 240px;
+        right: -130px;
+        transform: rotate(351deg);
+    }
+    .stepArrow2 {
+        position: absolute;
+        filter: invert(27%) sepia(0%) saturate(162%) hue-rotate(189deg) brightness(89%) contrast(70%);
+        top: 80px;
+        width: 240px;
+        right: -130px;
+    }
+
+    .iconCard {
+        width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background: transparent;
+        border: 2px solid var(--Main);
+        color:var(--Main);
+        font-size: 52px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .contentBody {
+
+        h4 {
+            font-size: 22px;
+        }
+        p {
+            margin: 0px;
+            color: #525252;
+        }
+    }
+}
+
+.aboutHome {
+    padding:80px 0px 60px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.featuredSection {
+    padding: 80px 0px;
+
+    .featuredBox {
+        display: flex;
+        padding: 15px 15px;
+        margin-top: 25px;
+        min-height: 125px;
+        box-shadow: 0px 4px 40px 0px #70707030;
+        border-radius: 15px;
+
+        .featuredIcon {
+            min-width: 50px;
+            min-height: 50px;
+            max-width: 50px;
+            max-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #fbbf15;
+            margin-right: 15px;
+        }
+        .featuredBody {
+            width: 100%;
+
+            h5 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            p {
+                margin: 0px;
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .imgSection {
+
+        img {
+            width: 100%;
+            padding-left: 50px;
+        }
+    }
+}
+
+.taxiSection {
+    text-align: center;
+    padding: 10px 0px 80px 0px;
+    background-image: linear-gradient(#ffffff, #f6f6f6);
+
+    img {
+        width: 650px;
+        margin-left: -50px;
+    }
+}
+
+
+.downLoadSection {
+    padding: 80px 0px;
+
+    .imgBox {
+
+        img {
+            width: 100%;
+        }
+    }
+    .contentBox {
+        
+        span {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+            color: var(--Main);
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+
+                a {
+                    display: block;
+                    margin-right: 15px;
+
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:991px) {
+
+    .bookingSection {
+    
+        .bannersection {
+    
+            .bannerContent {
+               width: 92%;
+            }
+        }
+        .contentBox {
+            margin-top: -90px;
+    
+            .bookingForm {
+                width: 100%;
+                padding: 20px 20px;
+                
+                .formBox {
+
+                    .submitBtn {
+                        margin-top: 15px;
+                    }
+                }
+            }
+    
+        }
+    }
+
+    .taxiSection {
+    
+        img {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+
+    .featuredSection {
+    
+        .imgSection {
+            display: none;
+        }
+    }
+    .downLoadSection {
+        
+        .contentBox {
+            ul {
+    
+                li {
+    
+                    a {
+    
+                        img {
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .stepCard {
+    
+        .stepArrow {
+            display: none;
+        }
+        .stepArrow2 {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+    .stepCard {
+    
+        .stepArrow {
+            width: 200px;
+            right: -110px;
+        }
+        .stepArrow2 {
+            width: 200px;
+            right: -110px;
+        }
+    }
+}

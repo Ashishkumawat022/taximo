@@ -1,0 +1,12 @@
+export { default as Home } from "./Home/Home";
+export { default as BookingRide } from "./BookingRide/BookingRide";
+export { default as Payment } from "./Payment/Payment";
+export { default as Login } from "./Login/Login";
+export { default as Signup } from "./Signup/Signup";
+export { default as ForgotPassword } from "./ForgotPassword/ForgotPassword";
+export { default as Otp } from "./Otp/Otp";
+export { default as TermsConditions } from "./TermsConditions/TermsConditions";
+export { default as PrivacyPolicy } from "./PrivacyPolicy/PrivacyPolicy";
+export { default as BecomeDriver } from "./BecomeDriver/BecomeDriver";
+export { default as BecomeCompany } from "./BecomeCompany/BecomeCompany";
+export { default as Success } from "./Success/Success";

@@ -1,0 +1,27 @@
+.error_404 {
+  margin: 0px auto;
+  text-align: center;
+  padding: 120px 20px;
+
+  h1 {
+    font-size: 140px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 16px;
+    color: gray;
+  }
+
+  .setupBtn {
+    background: linear-gradient(0deg, #F3F4F9, #F3F4F9), linear-gradient(0deg, #EFEEF3, #EFEEF3), linear-gradient(0deg, #EFEEF3, #EFEEF3), linear-gradient(180deg, rgba(239, 238, 243, 0.27) 0%, rgba(239, 238, 243, 0.29) 100%), #DDE1EB;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px 20px;
+    font-size: 14px;
+    color: #7F8699 !important;
+    margin-top: 30px;
+  }
+}

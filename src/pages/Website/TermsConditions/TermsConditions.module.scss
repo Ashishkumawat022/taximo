@@ -1,0 +1,72 @@
+.bookingSection {
+    position: relative;
+
+    .bannersection {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .bannerContent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+
+            h2 {
+                font-size: 40px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+
+.loginForm {
+
+    .contentBody {
+        h3{
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        p{
+            color: #525252;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:991px) {
+
+    .bookingSection {
+
+        .bannersection {
+
+            .bannerContent {
+                width: 92%;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {}

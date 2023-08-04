@@ -1,0 +1,122 @@
+.modalCts {
+
+  :global(.modal-dialog) {
+
+    :global(.modal-content) {
+      border: none;
+      background-color: #F3F4F9;
+
+      :global(.modal-header) {
+        padding:10px 20px;
+        background: var(--Main);
+
+        :global(.modal-title) {
+          font-size: 20px;
+        }
+
+        .closeIcon {
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          background: transparent;
+          border: none;
+          width: 40px;
+          height: 40px;
+          padding: 5px 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+          font-size: 25px;
+        }
+      }
+
+      
+      :global(.modal-footer) {
+        padding: 8px 12px;
+        justify-content: center;
+
+        .submit {
+          background: var(--Main);
+          color: #222;
+          border-color: var(--Main);
+        }
+      }
+
+    }
+  }
+
+}
+
+.searchForm {
+  box-shadow: 0px 4px 40px 0px #70707030;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+
+  &:focus {
+    box-shadow: 0px 4px 40px 0px #70707030;
+    border: 1px solid var(--Main);
+  }
+}
+
+.paymentTab {
+
+  :global(.nav-pills) {
+    margin-bottom: 15px;
+
+    :global(.nav-item) {
+
+      :global(.nav-link) {
+        background-color: #fff;
+        border: 2px solid var(--Main);
+        color: #222;
+        min-width: 150px;
+        text-align: center;
+        margin-right: 15px;
+
+        &:global(.active) {
+          background-color: var(--Main);
+        }
+      }
+    }
+  }
+}
+.logoutPopup{
+	padding: 20px 20px;
+
+	h3{
+		font-size: 16px;
+		font-weight: normal;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	:global(.btn){
+		width: 100%;
+		color: #000;
+		display: block;
+		padding: 8px 8px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+
+	.actionBtn{
+		background-color: var(--Main);
+		border-radius: 6px;
+	}
+
+  .btnsAlignments {
+    display: flex;
+    
+    :global(.btn){ 
+      margin: 0px 5px;
+    }
+  }
+}
